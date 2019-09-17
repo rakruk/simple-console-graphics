@@ -15,7 +15,7 @@ steps:
 - task: CMake@1
   inputs:
     workingDirectory: 'build'
-    cmakeArgs: '-G Ninja'
+    cmakeArgs: '-A x64 ..'
 - task: MSBuild@1
   inputs:
     solution: 'build.common/ALL_BUILD.vcxproj'
