@@ -18,5 +18,5 @@ steps:
     cmakeArgs: '-A x64 ..'
 - task: MSBuild@1
   inputs:
-    solution: 'build.common/ALL_BUILD.vcxproj'
+    solution: 'build/ALL_BUILD.vcxproj'
     maximumCpuCount: true
